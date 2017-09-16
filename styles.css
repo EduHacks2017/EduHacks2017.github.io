@@ -1,0 +1,46 @@
+.languageTab{
+  background-color:#f7f7f7;
+  height:120px;
+  width:400px;
+  border-radius:20px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:20px;
+
+  -moz-transition: all 1s;
+  -khtml-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+
+  font-size:3em;
+  font-family:Quicksand;
+}
+
+.languageTab:hover{
+  transform: scale(1.05);
+}
+
+#container{
+  position:absolute;
+  left:25%;
+  width:50%;
+  top:10%;
+  margin:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+
+  -moz-transition: all 1;
+  -khtml-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+body{
+  background-color:#bff3ff;
+}
