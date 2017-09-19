@@ -61,7 +61,8 @@ function validate(event) {
     let str = document.getElementById("input").value; // user typed in
     for (let i = 0; i <= str.length - 1; i++) {
         if (str[i] !== inputStr[counter  + i]) {
-            console.log('fail!');
+            document.getElementById("result").innerHTML="Wrong!";
+            document.getElementById("result").style.color="red";
             return;
         }
     }
@@ -71,5 +72,6 @@ function validate(event) {
         counter += str.length + 1;
         document.getElementById("input").value="";
     }
-    console.log('pass!');
+    document.getElementById("result").innerHTML="Good.";
+    document.getElementById("result").style.color="green";
 }

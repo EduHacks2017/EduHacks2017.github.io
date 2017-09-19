@@ -75,16 +75,12 @@
   padding:20px 10px 20px 10px;
 }
 
-.current{
-  background-color:#efff7a;
-}
-
-.accepted{
-  background-color:#75b0ff;
-}
-
-.rejected{
-  background-color:#ff2100;
+#result{
+  font-family:"Quicksand";
+  font-size:30px;
+  font-weight:bolder;
+  width:100%;
+  text-align:center;
 }
 
 body{
