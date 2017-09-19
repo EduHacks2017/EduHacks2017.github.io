@@ -7,6 +7,10 @@ let counter =  0;
 let inputStr="";
 function switchSelected(obj,id){
   let tabs=document.getElementsByClassName("languageTab");
+
+  document.getElementById("input").value="";
+  counter=0;
+  
   for(let i=0;i<tabs.length;i++){
     tabs[i].style.backgroundColor="#f7f7f7";
   }
