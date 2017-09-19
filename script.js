@@ -7,10 +7,8 @@ let counter =  0;
 let inputStr="";
 function switchSelected(obj,id){
   let tabs=document.getElementsByClassName("languageTab");
-
-  document.getElementById("input").value="";
   counter=0;
-  
+
   for(let i=0;i<tabs.length;i++){
     tabs[i].style.backgroundColor="#f7f7f7";
   }
@@ -46,7 +44,10 @@ function start(tab,id){
   switchSelected(tab,id);
   let text=document.getElementById("text");
   createSpans(inputStr,text);
-  if(started) return;
+  if(started){
+    document.getElementById("input").value="";
+    return;
+  }
   started=true;
 
   let container=document.getElementById("container");
